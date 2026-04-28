@@ -1,0 +1,30 @@
+body {
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* ===== WebKit (Chrome, Edge, Safari) ===== */
+::-webkit-scrollbar {
+    width: 1px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000; /* чёрный бэк */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444; /* тёмно-серый скролл */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* чуть светлее при ховере */
+}
+
+/* ===== Firefox ===== */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #444 #000; /* thumb | track */
+}

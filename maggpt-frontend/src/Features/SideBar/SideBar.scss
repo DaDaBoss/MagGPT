@@ -1,0 +1,82 @@
+$side-bar-width: 250px;
+
+.sidebar {
+
+  position: fixed;
+  height: 100vh;
+  color: #d3d3d3;
+  box-shadow: 16px 10px 15px -3px rgba(0,0,0,0.1);
+  width: $side-bar-width;
+  background-color: #191717;
+  z-index: 10;
+
+  padding: 0 15px;
+  overflow-x: hidden;
+
+  .sidebar__container {
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #191717;
+    width: $side-bar-width;
+    top: 0;
+    border-bottom: 1px solid #434343;
+
+    h1 {
+      padding-left: 10px;
+      font-size: 1.4rem;
+      user-select: none;
+    }
+  }
+
+  .profile {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    position: fixed;
+    width: $side-bar-width;
+    height: 70px;
+    background-color: #232323;
+    top: calc(100% - 70px);
+    left: 0;
+    padding: 0 15px;
+    transition: background-color .2s;
+
+    .profile__icon {
+      width: 28px;
+      height: 28px;
+
+      margin-left: 10px;
+    }
+
+    .profile__name{
+      color: white;
+      margin-left: 10px;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &:hover {
+      background-color: #424040;
+      cursor: pointer;
+    }
+  }
+
+
+  .chats {
+    margin-top: 190px;
+    margin-bottom: 80px;
+
+    .chats__title{
+    }
+
+
+    .chats__list {
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+}
